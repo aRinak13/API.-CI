@@ -29,7 +29,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: run app
-        run: java -jar ./artifacts/app-mbank.jar
+        run: java -jar ./artifacts/app-mbank.jar &
       - name: access to gradlew
         run: chmod +x gradlew
       - name: run tests
